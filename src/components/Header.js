@@ -1,9 +1,11 @@
+import Button from './Button'
 
-const Header = (props) => {
+const Header = ({title , onAdd }) => {
    return (
-       <div>
-           <h1 style = {{color : 'red'}}>Hello {props.title}</h1>
-       </div>
+       <header className = 'header'>
+           <h1>Hello {title}</h1>
+           <Button color = 'green' text = 'Add' onClick = {onAdd}/>
+       </header>
    ) 
 }
 
